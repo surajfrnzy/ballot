@@ -76,7 +76,7 @@
   color: #fff;
   background-color: #007bff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   display: block;
@@ -120,7 +120,7 @@
 
 
 
-/* Styles for Voter Dashboard */
+/* Styles for Voter and Admin Dashboard */
 .dashboard-container {
   max-width: 900px;
   margin: 60px auto;
@@ -167,7 +167,8 @@
     margin: 10px 0;
   }
 }
-/* Styles for Voter Dashboard Links */
+
+/* Styles for Dashboard Links */
 .nav-link {
   text-decoration: none;
   color: #007bff;
@@ -320,7 +321,7 @@
   padding: 30px;
   border-radius: 12px;
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 16px  rgba(0, 0, 0, 0.15);
   border: 1px solid #e0e0e0;
 }
 
@@ -382,26 +383,6 @@
   font-size: 14px;
   color: #777;
 }
-
-.submit-btn {
-  padding: 14px 20px;
-  font-size: 18px;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  display: block;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
 .no-candidates {
   text-align: center;
   font-size: 18px;
@@ -468,17 +449,6 @@
   flex-direction: column;
   gap: 10px;
 }
-
-/* .form-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-label {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 5px;
-} */
 
 .form-select {
   width: 100%;
@@ -566,79 +536,7 @@
   }
 }
 
-/* General Styles for Admin Dashboard */
-.admin-container {
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-}
 
-.admin-heading {
-  font-size: 30px;
-  margin-bottom: 30px;
-  color: #333;
-  text-align: center;
-}
-
-.admin-nav {
-  margin-bottom: 20px;
-}
-
-.admin-nav-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.admin-nav-list li {
-  margin-bottom: 10px;
-}
-
-.admin-nav-link {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  color: #555;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.admin-nav-link i {
-  margin-right: 10px;
-}
-
-.admin-nav-link:hover {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.admin-nav-link.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.admin-content {
-  padding: 20px;
-  border-top: 1px solid #ddd;
-}
-
-
-
-@media (max-width: 768px) {
-  .admin-heading {
-    font-size: 24px;
-  }
-
-  .admin-nav-link {
-    font-size: 16px;
-  }
-}
 
 /* Container for Manage Elections */
 .manage-elections-container {
@@ -668,17 +566,6 @@
 /* Election Form */
 .election-form {
   margin-bottom: 40px;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  font-size: 16px;
-  margin-bottom: 5px;
-  display: block;
-  color: #555;
 }
 
 .form-control {
@@ -796,6 +683,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .logout-btn i {
@@ -804,6 +692,7 @@ body {
 
 .logout-btn:hover {
   background-color: #c82333;
+  transform:scale(1.05);
 }
 
 /* Responsive adjustments */
