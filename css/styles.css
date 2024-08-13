@@ -78,7 +78,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.5s, transform 0.5s;
   display: block;
   width: 100%;
 }
@@ -177,7 +177,7 @@
   align-items: center;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s, color 0.5s;
 }
 
 .nav-link:hover {
@@ -199,7 +199,7 @@
 
 .nav-item {
   margin: 0 10px;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 .nav-item:hover {
@@ -263,7 +263,7 @@
 
 .elections-table tbody tr:hover {
   background-color: #f5f5f5;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .elections-table td {
@@ -279,7 +279,7 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: background-color 0.5s, transform 0.5s, box-shadow 0.5s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -347,7 +347,7 @@
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 .candidate-option:hover {
@@ -417,7 +417,7 @@
 
 .candidates-table tbody tr:hover {
   background-color: #f5f5f5;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .candidates-table td {
@@ -467,7 +467,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.5s, transform 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -683,7 +683,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.5s, transform 0.5s;
 }
 
 .logout-btn i {

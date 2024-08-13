@@ -1,42 +1,37 @@
-document
-  .getElementById("toggle-password")
-  .addEventListener("click", function () {
-    var passwordField = document.getElementById("password");
-    var toggleButton = document.getElementById("toggle-password");
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>';
+$(document).ready(function () {
+  $("#toggle-password").on("click", function () {
+    var passwordField = $("#password");
+    var toggleButton = $("#toggle-password");
+    if (passwordField.attr("type") === "password") {
+      passwordField.attr("type", "text");
+      toggleButton.html('<i class="fas fa-eye-slash"></i>');
     } else {
-      passwordField.type = "password";
-      toggleButton.innerHTML = '<i class="fas fa-eye"></i>';
-    }
-  });
-document
-  .getElementById("c-toggle-password")
-  .addEventListener("click", function () {
-    var passwordField = document.getElementById("confirm_password");
-    var toggleButton = document.getElementById("c-toggle-password");
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      toggleButton.innerHTML = '<i class="fas fa-eye-slash"></i>';
-    } else {
-      passwordField.type = "password";
-      toggleButton.innerHTML = '<i class="fas fa-eye"></i>';
+      passwordField.attr("type", "password");
+      toggleButton.html('<i class="fas fa-eye"></i>');
     }
   });
 
-document
-  .getElementById("confirm_password")
-  .addEventListener("input", function () {
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirm_password").value;
-    const message = document.getElementById("message");
+  $("#c-toggle-password").on("click", function () {
+    var passwordField = $("#confirm_password");
+    var toggleButton = $("#c-toggle-password");
+    if (passwordField.attr("type") === "password") {
+      passwordField.attr("type", "text");
+      toggleButton.html('<i class="fas fa-eye-slash"></i>');
+    } else {
+      passwordField.attr("type", "password");
+      toggleButton.html('<i class="fas fa-eye"></i>');
+    }
+  });
+
+  $("#confirm_password").on("input", function () {
+    const password = $("#password").val();
+    const confirmPassword = $("#confirm_password").val();
+    const message = $("#message");
 
     if (confirmPassword === password) {
-      message.textContent = "Passwords match";
-      message.style.color = "green";
+      message.text("Passwords match").css("color", "green");
     } else {
-      message.textContent = "Passwords do not match";
-      message.style.color = "red";
+      message.text("Passwords do not match").css("color", "red");
     }
   });
+});

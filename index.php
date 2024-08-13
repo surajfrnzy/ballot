@@ -37,15 +37,15 @@ if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'admin') {
         text-decoration: none;
         color: white;
         border-radius: 5px;
-        transition: background-color 0.3s, transform 0.3s;
+        transition: background-color 0.5s, transform 0.5s;
     }
 
     .btn-login {
-        background-color: #007bff; 
+        background-color: #007bff;
     }
 
     .btn-signup {
-        background-color: #28a745; 
+        background-color: #28a745;
     }
 
     .btn-login:hover,
