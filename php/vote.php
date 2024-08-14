@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['candidate_id']) && iss
     $user_id = $_SESSION['user_id'];
 
     // Check if the user has already voted in this election
-    $check_sql = "SELECT * FROM votes WHERE user_id = ? AND election_id = ?";
+    $check_sql = "SELECT * FROM votes WHERE user_id = ? AND election_id = ? ";
     $stmt = $conn->prepare($check_sql);
     $stmt->bind_param("ii", $user_id, $election_id);
     $stmt->execute();

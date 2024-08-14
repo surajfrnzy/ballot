@@ -1,7 +1,11 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] != 'admin') {
-    header("Location: login.php");
+    if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'voter') {
+        header("Location: index.php");
+    } else {
+        header("Location: login.php");
+    }
     exit();
 }
 include('templates/header.php');
