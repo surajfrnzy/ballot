@@ -717,3 +717,18 @@ body {
 .candidate-form{
   margin-bottom:40px;
 }
+/* Footer for The Pages */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}

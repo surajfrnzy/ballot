@@ -12,7 +12,8 @@ function fetchElectionResults($conn, $election_id)
             FROM votes 
             JOIN candidates ON votes.candidate_id = candidates.id 
             WHERE votes.election_id = ? 
-            GROUP BY candidates.name";
+            GROUP BY candidates.name
+            ORDER BY vote_count DESC";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $election_id);
     $stmt->execute();

@@ -20,7 +20,7 @@ session_start();
 
             </div>
             <?php if (isset($_SESSION['user_role'])) : ?>
-                <button class="logout-btn" onclick="window.location.href='php/logout.php'">
+                <button class="logout-btn" aria-label="Logout" onclick="window.location.href='php/logout.php'">
                     <i class="fas fa-sign-out-alt"></i> Logout
                 </button>
             <?php endif; ?>
